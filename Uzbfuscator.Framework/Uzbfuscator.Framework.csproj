@@ -3,10 +3,35 @@
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
 		<TargetFramework>net8.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Uzbfuscator</PackageId>
+		<Title>Uzbek Obfuscator</Title>
+		<PackageProjectUrl>https://github.com/uzbekdev1/Uzbfuscator</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/uzbekdev1/Uzbfuscator</RepositoryUrl>
+		<PackageTags>obfuscator</PackageTags>
+		<Description>Open-source, cross-platform obfuscator for .NET Assemblies built on .NET Core</Description>
+		<Authors>Elyor Latipov</Authors>
+		<Company>UzEx</Company>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Mono.Cecil" Version="0.11.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
