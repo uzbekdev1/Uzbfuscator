@@ -1,2 +1,3 @@
-# Uzbfuscator - open-source, cross-platform obfuscator for .NET Assemblies built on .NET Core
+# Uzbfuscator 
 
+Open-source, cross-platform obfuscator for .NET Assemblies built on .NET Core
